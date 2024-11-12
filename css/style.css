@@ -1,0 +1,424 @@
+body{
+    /* font-family: "DM Sans", sans-serif; */
+    
+}
+#home{
+   position: relative;
+   height: fit-content;
+}
+
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+    transition: background-color 0.3s ease;
+    height: 50px;
+  }
+
+.nav-link{
+   color: white !important;
+}
+.active {
+   color: indianred !important ;
+   }
+   .nav-link:hover{
+      color:  indianred!important;
+      transition: 1s;
+   }
+   .navbar-toggler {
+      background: none;
+      border: none;
+      font-size: 24px;
+      color: indianred;
+      cursor: pointer;
+  }
+  .navbar-collapse {
+   display: none; /* Hide by default */
+   flex-direction: column;
+   width: 100%;
+}
+.navbar-collapse.show {
+   display: flex; /* Show when toggled */
+}
+
+   
+   .carousel-item {
+      position: relative;
+     
+    }
+    
+   
+    .carousel-item::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+      
+      /* Adjust the gradient colors and direction as needed */
+      z-index: 1;
+    }
+    
+    .carousel-image {
+    
+      position: relative;
+      z-index: 0;
+      
+    }
+     .slide-content{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      z-Index: 2;
+    }
+    
+    .slide-content span{
+      color:  indianred;
+    }
+    .slide-content__main-heading--greeting{
+      color: white !important;
+    }
+#about{
+    background-color:rgba(220, 220, 220, 0.271)
+}
+
+ #about .title{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    letter-spacing: 5px;
+}
+#about .title h2 {
+    font-size: 3rem;
+    font-weight: 800;
+ }
+ 
+ #about .title h3 {
+    font-size: 5rem;
+    font-weight: 800;
+    position: absolute;
+    color: #2222220f;
+    z-index: -1;
+ }
+ #about .info{
+   color: dimgray;
+ font-family: 'Titillium Web';
+    font-size: 20px ;
+    
+ }
+ #about .info .mainMci{
+   font-weight: bold;
+ }
+ #about .about-arrow{
+cursor: pointer;
+ }
+ #about .info2 img{
+    width: 10%;
+    height: 10%;
+    vertical-align: baseline;
+ }
+ #about .info2 .h2{
+    font-size: 30px;
+ }
+ #about .info2 p , #about .info2 ul {
+    font-size: 20px ;
+    color:dimgray ;
+ }
+ #about .info2 .vision-img{
+    vertical-align:sub;
+ }
+ #about .aboutChange{
+        display: none;
+ }
+ #services .title .main-title{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 1;
+   letter-spacing: 5px;
+}
+#services .title .main-title .back{
+   text-align: center;
+
+}
+#services .title h2 {
+   font-size: 3rem;
+   font-weight: 800;
+}
+
+#services .title h3 {
+   font-size: 5rem;
+   font-weight: 800;
+   position: absolute;
+   color: #2222220f;
+   z-index: -1;
+}
+#services .title p  {
+   width: 60%;
+   text-align: center;
+   color: dimgray;
+ font-family: 'Titillium Web';
+    font-size: 18px ;
+    
+}
+#services .item{
+   background-color:rgba(220, 220, 220, 0.271) ;
+   border-radius: 10px;
+   
+}
+#services .item h4{
+   color:indianred;
+}
+#services .item ul{
+   color: dimgray;
+   line-height: 35px;
+}
+#products .title{
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 1;
+   letter-spacing: 5px;
+   
+}
+#products .title h2 {
+   font-size: 3rem;
+   font-weight: 800;
+}
+
+#products .title h3 {
+   font-size: 4.5rem;
+   font-weight: 800;
+   position: absolute;
+   color: #2222220f;
+   z-index: -1;
+}
+#product .product-details{
+   background-color:black;
+   
+   margin: auto;
+   text-align: center;
+}
+#products .container  .row .item{
+
+
+   cursor: pointer;
+   
+   
+
+}
+#products .container  .row .test{
+   position: relative;
+
+}
+
+#products .container .row .test span {
+   opacity: 1;
+   width: 80%;
+   height: 30%;
+      position: absolute;
+      top: 70%;
+      left: 7.3%;
+      background-color: rgba(0, 0, 0,0.4);
+     border-radius: 10px;
+     cursor: pointer;
+     color: aliceblue;
+     font-size: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   
+   }
+  
+.lightBox{
+   width:100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0,0.5);
+   position: fixed;
+   top: 0px;
+   left: 0px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.box-data{
+   width: 50%;
+   height: 80vh;
+   background-image: url('../images/1.jpg');
+   background-size: 100% 100%;
+   display: flex;
+   background-repeat: no-repeat;
+   align-items: center;
+   justify-content: space-between;
+   position: relative;
+}
+.box-data i{
+      font-size: 25px;
+      cursor: pointer;
+      margin-inline: 20px;
+}
+#close{
+   position: absolute;
+      top: 20px;
+      right: 0px;
+}
+#products .productsChange{
+   background-color:rgba(220, 220, 220, 0.271) ;
+   display: none;
+}
+#products .productsChange h3{
+   color: indianred;
+}
+#products .productsChange .text{
+   font-size: 18px;
+   line-height: 40px;
+   color: dimgray;
+}
+#products .productsChange strong{
+   font-size: 20px;
+}
+
+#products button{
+   font-family: 'Titillium Web';
+}
+#careers{
+   background-color: rgba(220, 220, 220, 0.271)  ;
+ font-family: 'Titillium Web';
+    
+}
+#careers h2{
+   font-size: 3rem;
+   font-weight: 800;
+}
+#careers p{
+   color: dimgray;
+   
+   font-size: 1.5rem;
+   font-weight: 400;
+}
+#careers p a{
+   text-decoration: none;
+   color: indianred;
+   font-weight: 700;
+}
+.partners__logo img{
+   opacity: 50%;
+   font-family: 'Titillium Web';
+  }
+  .partners h2{
+   font-family: 'Titillium Web';
+   font-size: 2.8rem;
+   font-weight: 800;
+  }
+  .partners__logo img:hover{
+    opacity: 100%;
+    transition: 0.5s;
+  }
+  .contact-footer {
+   background-color: #333;
+   padding: 20px;
+   border-top: 1px solid #ddd;
+   font-size: 14px;
+   color: whitesmoke;
+ }
+ 
+ .footer-content {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   flex-wrap: wrap;
+ }
+ 
+ .contact-info .contact-item i {
+ font-size: 25px;
+ padding: 5px;
+ color: indianred;
+ transition: 1s;
+ }
+ .contact-info .contact-item i:hover{
+   color: #e4b8b0;
+ }
+ 
+ .contact-info,
+ .email-social {
+   flex: 1;
+   max-width: 45%;
+ }
+ 
+ .email-social {
+   margin-top: 20px;
+   text-align: right;
+   /* padding-right: 30px; */
+ }
+ 
+ .compose-email-btn {
+   display: inline-block;
+   width: 200px;
+   margin-top: 10px;
+   padding: 10px 20px;
+   background-color: indianred;
+   color: whitesmoke;
+   border-radius: 4px;
+   text-decoration: none;
+   font-size: 16px;
+   transition: 1s;
+ }
+ 
+ .compose-email-btn:hover {
+   background-color: #e4b8b0;
+ }
+ 
+ .social-media {
+   margin-top: 20px;
+ }
+ 
+ .social-media h4 {
+   margin-bottom: 10px;
+ }
+ 
+ .social-icon {
+   font-size: 24px;
+   color: indianred;
+   margin: 0 10px;
+   text-decoration: none;
+ }
+ 
+ .social-icon:hover {
+   color: #e4b8b0;
+ }
+ 
+ @media (max-width: 768px) {
+   .footer-content {
+     flex-direction: column;
+     text-align: center;
+   }
+ 
+   .contact-info,
+   .email-social {
+     max-width: 100%;
+     text-align: center;
+   }
+ 
+   .email-social {
+     margin-top: 20px;
+   }
+ }
+ 
+ 
+ 
+ /* Footer Styling */
+ .footer {
+   padding: 20px;
+   background-color: #333333ee;
+   text-align: center;
+   
+   font-size: 14px;
+   color: whitesmoke;
+ }
