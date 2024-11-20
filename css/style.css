@@ -6,13 +6,21 @@ body{
    position: relative;
    height: fit-content;
 }
-
-  .navbar {
-    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
-    transition: background-color 0.3s ease;
-    height: 50px;
+.navbar{
+   background-color: #33333360;
+   
+}
+.navbar-brand{
+   color: indianred !important;
+   transition: 1s;
   }
-
+  .navbar-brand{
+   color: indianred !important;
+   transition: 1s;
+  }
+.navbar-brand:hover{
+   color: white !important;
+}
 .nav-link{
    color: white !important;
 }
@@ -30,16 +38,6 @@ body{
       color: indianred;
       cursor: pointer;
   }
-  .navbar-collapse {
-   display: none; /* Hide by default */
-   flex-direction: column;
-   width: 100%;
-}
-.navbar-collapse.show {
-   display: flex; /* Show when toggled */
-}
-
-   
    .carousel-item {
       position: relative;
      
@@ -67,14 +65,24 @@ body{
     }
      .slide-content{
       position: absolute;
-      top: 50%;
+      top: 55%;
       left: 50%;
       transform: translate(-50%, -50%);
       color: white;
       text-align: center;
       z-Index: 2;
     }
-    
+  /* Change the size of the icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+
+   width: 100px;
+   height: 100px;
+  
+   
+}
+
+
     .slide-content span{
       color:  indianred;
     }
@@ -132,8 +140,11 @@ cursor: pointer;
  #about .info2 .vision-img{
     vertical-align:sub;
  }
+ 
+
  #about .aboutChange{
         display: none;
+   
  }
  #services .title .main-title{
    position: relative;
@@ -249,8 +260,8 @@ cursor: pointer;
    align-items: center;
 }
 .box-data{
-   width: 50%;
-   height: 80vh;
+   width: 40%;
+   height: 70%;
    background-image: url('../images/1.jpg');
    background-size: 100% 100%;
    display: flex;
@@ -349,7 +360,7 @@ cursor: pointer;
  .contact-info,
  .email-social {
    flex: 1;
-   max-width: 45%;
+   /* max-width: 45%; */
  }
  
  .email-social {
@@ -358,7 +369,7 @@ cursor: pointer;
    /* padding-right: 30px; */
  }
  
- .compose-email-btn {
+ .contact-info .btn {
    display: inline-block;
    width: 200px;
    margin-top: 10px;
@@ -366,32 +377,33 @@ cursor: pointer;
    background-color: indianred;
    color: whitesmoke;
    border-radius: 4px;
+  border: none;
    text-decoration: none;
    font-size: 16px;
    transition: 1s;
  }
- 
- .compose-email-btn:hover {
+ .contact-info .btn:hover {
    background-color: #e4b8b0;
  }
  
- .social-media {
+ /* .contact-info .social-media {
    margin-top: 20px;
- }
+ } */
  
- .social-media h4 {
+.contact-info .social-media h4 {
    margin-bottom: 10px;
  }
  
  .social-icon {
    font-size: 24px;
-   color: indianred;
+   color: indianred !important;
    margin: 0 10px;
-   text-decoration: none;
+  text-decoration: none !important;
+   
  }
  
  .social-icon:hover {
-   color: #e4b8b0;
+   color: #e4b8b0 !important;
  }
  
  @media (max-width: 768px) {
@@ -412,7 +424,6 @@ cursor: pointer;
  }
  
  
- 
  /* Footer Styling */
  .footer {
    padding: 20px;
@@ -422,3 +433,54 @@ cursor: pointer;
    font-size: 14px;
    color: whitesmoke;
  }
+
+
+ 
+
+/* @media (min-width: 1400px) { 
+   .box-data{
+      width: 40%;
+      height: 70%;
+    
+   }
+ }
+@media (min-width: 1200px) { 
+   .box-data{
+      width: 40%;
+      height: 70%;
+    
+   }
+ }
+@media (min-width: 992px) {
+   .box-data{
+      width: 40%;
+      height: 70%;
+    
+   }
+  }
+@media (min-width: 768px) { 
+   .box-data{
+      width: 100%;
+      height: 100%;
+    
+   }
+ }
+/* @media (min-width: 576px) { 
+   .box-data{
+      width: 100%;
+      height: 100%;
+    
+   }
+ } */ 
+ @media (max-width: 768px)  { 
+   .box-data{
+      width: 100%;
+      height: 100%;
+    
+   }
+      .slide-content__main-heading {
+        font-size: 20px; 
+      }
+  }
+   
+ 
