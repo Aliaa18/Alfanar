@@ -7,20 +7,14 @@
    height: fit-content;
 }
 .navbar{
-   background-color: #33333360;
+   background-color: #33333342;
    
 }
-.navbar-brand{
-   color: indianred !important;
-   transition: 1s;
-  }
-  .navbar-brand{
-   color: indianred !important;
-   transition: 1s;
-  }
-.navbar-brand:hover{
-   color: white !important;
-}
+.nav-logo{
+   width: 200px;
+   height: 70px;
+ }
+
 .nav-link{
    color: white !important;
 }
@@ -319,9 +313,13 @@ cursor: pointer;
    color: indianred;
    font-weight: 700;
 }
-.partners__logo img{
+
+  .partners__logo img{
+   
    opacity: 50%;
    font-family: 'Titillium Web';
+   width:150px ;
+   height:150px
   }
   .partners h2{
    font-family: 'Titillium Web';
