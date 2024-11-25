@@ -313,6 +313,11 @@ cursor: pointer;
    color: indianred;
    font-weight: 700;
 }
+.partner-logo {
+   align-items: center;
+   justify-content: center;
+   
+    }
 
 .partners__logo img{
    
